@@ -1,0 +1,50 @@
+(Signal Protocol)
+
+Cryptographic Primitives in Double Ratchet Algorithm:
+- Curve25519
+- AES-CBC-256
+- HMAC-SHA256
+
+Double Ratchet Allows For:
+- Regeneration of AES-256 Keys Any Time
+- Generate New Keys with Previous Keys
+- Forward and Backward Secrecy (Compromise of any keys does not mean compromise of other keys derived)
+- Output of KDF(Key Derivation Function) is Input of Next KDF
+- One Way Much like a Hash Function
+
+Diffie Hellman Ratchet:
+
+
+To Encrypt:
+	1. KDF Key and Secret is put through KDF function, outputting 2 Output Keys
+	2. One of the Output Keys is used for Encryption of Message, the other is used as Input Key for next KDF
+
+To Decrypt:
+
+Whatsapp upgrades connection from https to a secure websocket connection after connection to web client
+
+Following sigalor/whatsapp-web-reveng, i created a WA self bot used to do many things.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Resources:
+https://research.checkpoint.com/2018/fakesapp-a-vulnerability-in-whatsapp/ 
+https://github.com/sigalor/whatsapp-web-reveng
+https://github.com/Muterra/donna25519
+https://scontent.whatsapp.net/v/t61.22868-34/68135620_760356657751682_6212997528851833559_n.pdf/WhatsApp-Security-Whitepaper.pdf?_nc_sid=41cc27&_nc_ohc=1IH8I-cEDRYAX89cCIE&_nc_ht=scontent.whatsapp.net&oh=b20dbb09c5723cee6b5b93e81d065a39&oe=5E9AC393
