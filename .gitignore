@@ -1,0 +1,5 @@
+# Ignore Config File and all json Files
+*.json
+
+# Ignore Temporary QR File and all PNGs
+*.png
