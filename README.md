@@ -1,4 +1,2 @@
 # whoopsapp
-A synchronous client for WhatsApp in Python
-
-Following sigalor/whatsapp-web-reveng, i created a whatsapp client on python
+A synchronous client for WhatsApp in Python written using information from sigalor/whatsapp-web-reveng

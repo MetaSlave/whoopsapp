@@ -8,6 +8,8 @@ from Crypto.Random import get_random_bytes
 from Crypto.Util.Padding import pad, unpad
 import pyqrcode, png
 
+# Need to Simplify Code zzz
+
 def help():
 	print('''Run Without Parameters to KeyGen
 	Then, run like this: whoopsapp.py [serverToken] [clientToken]''')
@@ -86,11 +88,9 @@ def on_message(ws, message):
 		#----Decrypting Messages from Server----
 		with open('config.json', 'r') as file:
 			config = json.load(file)
-		
-		message = str(message).split(',', 1)
-		message = message[1].encode()
-		
-		print('Message is: ' + str(len(message)) + ' bytes size.')
+				
+		message = message.split(b',', 1)
+		message = message[1]
 		
 		# HMAC Validation
 		h = HMAC.new(base64.b64decode(config['messageKey']['macKey'].encode('utf-8')), digestmod=SHA256)

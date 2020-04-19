@@ -12,19 +12,9 @@ Double Ratchet Allows For:
 - Output of KDF(Key Derivation Function) is Input of Next KDF
 - One Way Much like a Hash Function
 
-Diffie Hellman Ratchet:
-
-
-To Encrypt:
-	1. KDF Key and Secret is put through KDF function, outputting 2 Output Keys
-	2. One of the Output Keys is used for Encryption of Message, the other is used as Input Key for next KDF
-
-To Decrypt:
-
 Whatsapp upgrades connection from https to a secure websocket connection after connection to web client
 
-Following sigalor/whatsapp-web-reveng, i created a WA self bot used to do many things.
-
+Following sigalor/whatsapp-web-reveng, i created a WA client bot thingy
 
 
 
